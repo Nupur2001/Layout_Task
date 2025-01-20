@@ -21,7 +21,8 @@
   /* margin: 0rem 17rem 3rem 17rem; */
   margin: 0 0rem 3rem 0rem;
   /* height: 100vh; */
-  height: 216vh;
+  /* height: 216vh; */
+  height: 267vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -56,9 +57,9 @@
   color: white;
 }
 
-.sidebar .menu{
+.sidebar .menu {
   /* margin-left: 1rem; */
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .active {
@@ -95,15 +96,15 @@
   /* background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 0.8rem center; */
 }
 
-.card-row .greeting h2 , .card-row .userInfo h3 {
+.card-row .greeting h2,
+.card-row .userInfo h3 {
   font-size: 3rem;
 }
 
-.card-row .greeting p , .card-row .userInfo p{
+.card-row .greeting p,
+.card-row .userInfo p {
   font-size: 2rem;
 }
-
-
 
 .content .card-row .profile {
   display: flex;
@@ -139,10 +140,11 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.card h3{
+.card h3 {
   font-size: 2.5rem;
 }
 .card .btn {
+  font-size: 1.5rem;
   margin-top: 0.4rem;
   background-color: #fff;
   border: 0.1em solid black;
@@ -171,22 +173,27 @@
 }
 
 .card9 {
-  height: 15rem;
+  height: 18rem;
 }
 .card5 {
   height: 20rem;
+  overflow: scroll;
+}
+
+.card6 {
+  height: 25rem;
   overflow: scroll;
 }
 .card4 img {
   height: 16rem;
 }
 
-.card7,
+/* .card7,
 .card8 {
   margin-top: -10rem;
-}
+} */
 
-.cardHeading{
+.cardHeading {
   display: flex;
   justify-content: space-between;
 }
@@ -243,26 +250,126 @@
   color: gray;
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .container{
-    
-  }
+.progress h4 {
+  font-weight: 500;
+  font-size: 2rem;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+  
+}
 @media only screen and (min-width: 600px) {
 
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .sidebar {
+    width: 45vw;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .card-row #search {
+    font-size: 2rem;
+    width: 20rem;
+  }
+  .card-row .greeting h2,
+  .card-row .userInfo h3 {
+    font-size: 2rem;
+  }
+  .card-row .greeting p,
+  .card-row .userInfo p {
+    font-size: 1.9rem;
+  }
 
+  .notification {
+    font-size: 1.5rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .tContent p, .cardHeading p {
+    font-size: 1.7rem;
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+  .event {
+    font-size: 1.5rem;
+  }
+  .eventInfo p {
+    font-size: 1.5rem;
+  }
+  .eventIcon img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .cards {
+  row-gap: 4rem;
+    grid-template-columns: auto auto;
+  }
+  .card {
+
+    width: 40vw;
+  }
+  .card6{
+    height: 20rem;
+    overflow: scroll;
+  }
+  .card7, .card8{
+    margin-top: 1rem;
+  }
+  .progress h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards{
+  grid-template-columns: auto;
+  }
+  .card{
+    width: 85vw;
+  }
+  .sidebar {
+    width: 60vw;
+  }
+  .card-row #search {
+    width: 17rem;
+  }
+  .card-row {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+ }
+
 @media only screen and (min-width: 1200px) {
-
 }
+
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* @media (min-width: 320px) and (max-width: 480px) {
+  .card {
+    width: 320vw;
+  }
+  .card h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media (min-width: 1201px) {
+} */
