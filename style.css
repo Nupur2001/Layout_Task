@@ -31,6 +31,7 @@ body {
 }
 
 .logo {
+  font-size: 2rem;
   padding: 1rem;
   /* margin-left: 2rem; */
 }
@@ -277,7 +278,7 @@ body {
     width: 20rem;
   }
 
-  .card-row .greeting{
+  .card-row .greeting {
     margin-right: 2rem;
   }
 }
@@ -286,14 +287,14 @@ body {
   .cards {
     grid-template-columns: auto;
   }
-  .card{
+  .card {
     width: 50vw;
   }
   .card-row #search {
     width: 28rem;
   }
 
-  .card-row .greeting{
+  .card-row .greeting {
     margin-right: 0;
   }
   .sidebar {
@@ -308,10 +309,9 @@ body {
   .card-row {
     margin-left: 7rem;
   }
-
 }
-@media (min-width: 769px) and (max-width: 1024px){
-   .cards {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
     grid-template-columns: auto auto;
   }
   .card {
@@ -327,7 +327,7 @@ body {
     width: 20rem;
   }
 
-  .card-row .greeting{
+  .card-row .greeting {
     margin-right: 2rem;
   }
 }
@@ -336,14 +336,14 @@ body {
   .cards {
     grid-template-columns: auto;
   }
-  .card{
+  .card {
     width: 50vw;
   }
   .card-row #search {
     width: 28rem;
   }
 
-  .card-row .greeting{
+  .card-row .greeting {
     margin-right: 0;
   }
   .sidebar {
@@ -360,60 +360,107 @@ body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
-  .cards{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
     justify-content: center;
     grid-template-columns: auto;
   }
   .card6 {
     margin-top: 1rem;
-}
-.sidebar {
-  width: 37vw;
-}
-.logo {
-  font-size: 2rem;
-}
+  }
+  .sidebar {
+    width: 37vw;
+  }
+  .logo {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .card-row #search {
     width: 16rem;
   }
-  .cards{
+  .cards {
     grid-template-columns: auto;
     justify-content: center;
   }
-  .card{
+  .card {
     width: 77vw;
+  }
+  .sidebar {
+    width: 80vw;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .card-row #search {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
     width: 16rem;
   }
-  .cards{
+  .cards {
     grid-template-columns: auto;
-    justify-content: center;
+    justify-content: left;
   }
-  .card{
+  .card {
     width: 77vw;
   }
   .sidebar {
     width: 95vw;
   }
   .logo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .sidebar li {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .card .btn {
     font-size: 2.5rem;
   }
+  .card-row {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .card-row .greeting h2 {
+    font-size: 2rem;
+  }
+  .content .card-row .profile {
+    margin-right: 3rem;
+  }
+  .card-row .userInfo h3 {
+    font-size: 1.5rem;
+  }
+  .card-row .greeting p, .card-row .userInfo p {
+    font-size: 1.2rem;
 }
-
+.card .btn {
+  font-size: 1.5rem;
+}
+.card h3 {
+  font-size: 1.2rem;
+}
+.tContent p, .cardHeading p {
+  font-size: 1rem;
+}
+.tContent {
+  font-size: 1rem;
+}
+.event {
+  font-size: 1.2rem;
+}
+.eventIcon img {
+  height: 2rem;
+  width: 2rem;
+}
+.eventInfo p {
+  font-size: 1rem;
+  color: gray;
+}
+}
 
 /* @media only screen and (max-width: 600px) {
   
