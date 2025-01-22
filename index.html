@@ -15,7 +15,12 @@
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
+    <div>
+      <button id="hamburger" class="fa-solid fa-bars hamBtn" onclick=""></button>
+      <!-- <i class="fa-solid fa-bars"></i> -->
+    </div>
+    <div class="sidebar" >
+      
       <div class="logo">
         <h2>Robo<span>tech</span></h2>
       </div>
@@ -26,7 +31,7 @@
               ><i class="fa-regular fa-calendar-check"></i> My Schedule</a
             >
           </li>
-          <li class="active">
+          <li class="linkActive">
             <a href=""><i class="fa-solid fa-house"></i> Dashboard</a>
           </li>
           <li>
@@ -216,6 +221,7 @@
                   </div>
                   <div class="eventIcon">
                     <img src="notification.png" alt="notification">
+
                   </div>
                 </div>
                 
@@ -234,7 +240,7 @@
                 
               </div>
               <hr>
-              <div class="e4">
+              <div class="e4">hambur
                 <div class="event">
                   <div class="eventInfo">
                     <h4>Event Name5</h4>
@@ -256,7 +262,7 @@
                     <p>Lorem, ipsum dolor.</p>
                   </div>
                   <div class="eventIcon">
-                    <img src="notification.png" alt="notification">
+                    <img src="notification.png" alt="nhamburotification">
                   </div>
                 </div>
                 
@@ -308,6 +314,31 @@
         </div>
     </div>
 
+    <script>
+      // document.addEventListener('DOMContentLoaded', () => {
+      //   const hamburger = document.querySelector('.hamburger');
+      //   const sidebar = document.querySelector('.sidebar');
+        
+      //   // hamburger.addEventListener('click', () => {
+      //   //   // Toggle the 'active' class on both the hamburger and the sidebar
+      //   //   console.log("hamburger button tapped!")
+      //   //   hamburger.classList.toggle('active');
+      //   //   sidebar.classList.toggle('active');
+      //   // });
+      // });
 
+      document.getElementById("hamburger").addEventListener("click", myFunction);
+
+      function myFunction() {
+        var x = document.getElementsByClassName("sidebar")[0]; // Access the first element with class 'sidebar'
+    
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+      }
+    </script>
+    
 </body>
 </html>
